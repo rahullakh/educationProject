@@ -1049,7 +1049,7 @@ html,body {
   
     .text-content {
       max-width: 100%;
-      height: 46vh;
+      height: 50vh;
     }
     .text{
       text-align: center;
@@ -1219,6 +1219,7 @@ html,body {
      background-color: black;
   }
   .swiper-slide {
+    width: 100%;
     position: relative;
     text-align: start;
     display: flex;
