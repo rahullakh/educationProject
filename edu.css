@@ -1014,10 +1014,11 @@ html,body {
       width: 100%;
     }
     .logo{
-      margin-left: 28px;
+      margin-left: 20px;
     }
     .logo img {
-      max-width: 55px;
+      max-width: 50px;
+      font-weight: 700;
     }
     .items ul {
       width: 100%;
@@ -1037,7 +1038,7 @@ html,body {
     
     #Page1 {
       width: 100%;
-      padding: 0px 12px 10px 12px;
+      /* padding: 0px 12px 10px 12px; */
       
     }
     .content{
@@ -1048,44 +1049,48 @@ html,body {
   
     .text-content {
       max-width: 100%;
-      height: 60vh;
+      height: 46vh;
     }
     .text{
       text-align: center;
-      line-height: 1.9;
+      line-height: 1;
       margin: 10px 30px 40px 30px;
       max-width: 100%;
     }
     
     .text h1 {
       text-transform: uppercase;
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 10px;
+      font-size: 7vw;
+      font-weight: 600;
+      margin-bottom: 8px;
     }
     
     .text p {
-      font-size: 0.88rem;
-      line-height: 1.7;
+      font-size: 3.6vw;
+      line-height: 1.8;
     }
     
     .text button {
-      margin-top: 15px;
-      font-size: 0.9rem;
-      padding: 8px 16px;
+      margin-top: 10px;
+      font-size: 3.3vw;
+      padding: 8px 15px;
+      font-weight: 600;
     }
     .img-content{
       display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 30px 20px 30px 20px;
+      align-items: flex-start;
+      justify-content:center;
        width: 100%;
-       height: 100vh;
+       height: 70vh;
     }
    .img{
-    width: 400px;
-    height: 380px;
+     align-self: center;
+     width: 350px;
+     height: 300px;
    }
    .img-src{
+   
    width: 100%;
    height: 100%; 
    
@@ -1109,15 +1114,15 @@ html,body {
   gap: 5px;
 }
 .learn i{
-  font-size: 20px;
+  font-size: 18px;
 }
 .learn h2{
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 4vw;
+  font-weight: 600;
   color: rgb(10, 41, 65);
 }
 .learn p{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -1176,48 +1181,57 @@ html,body {
 
   .swiper .course{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 10px 10px 10px;
 
   }
   .course h1{
     color: #041383;
-    font-size: 2.8vw;
-    font-weight: 600;
+    font-size: 5vw;
+    font-weight: 700;
 
   }
  .swiper .course ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
-    gap: 15px;
+    gap: 12px;
   }
  
   .course ul li a{
     color: #01083d;
-    font-size: 2.2vw;
-    font-weight: 500;
+    font-size: 3.4vw;
+    font-weight: 600;
     text-decoration: none;
   }
   .course ul li a:hover{
     text-decoration: underline;
   }
-  
+  .swiper-wrapper{
+    width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: black;
+  }
   .swiper-slide {
     position: relative;
     text-align: start;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
+ 
   .swiper-slide .subjects-content h3{
     position: absolute;
     top: 5%;
     left: 5%;
-    font-size: 2.2vw;
+    font-size: 2.68vw;
     font-weight: 500;
     letter-spacing: 1px;
     
@@ -1348,47 +1362,54 @@ html,body {
   .subjects{
     text-align: center;
     color: white;
-    padding: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
   }
   .subjects h1{
-    font-size: 6vw;
-    margin-bottom: 10px;
+    font-size: 6.3vw;
+    margin-bottom:10px;
   }
   .subjects p{
-    font-size: 2.50vw;
+    font-size: 3.6vw;
+    font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 1px;
   }
   .categry{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 20px 10px 50px 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0px;
+    padding: 0px 10px 10px 10px;
     color: white;
   }
   .categry .circle{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border: 2px solid rgb(190, 188, 188);
     border-radius: 50%;
     background-color: white;
     color: red;
   }
   .categry .circle i{
-   font-size: 60px;
+   font-size: 50px;
    font-weight: 400;
   }
   .categry .items{
+    margin-top: 5px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
   }
   .items h3{
     margin-top: 10px;
-    font-size: 2.4vw;
+    font-size: 4.2vw;
     font-weight: 500;
+    letter-spacing: 1.2px;
   }
   .All-categry{
     text-align: center;
