@@ -60,7 +60,7 @@ html,body {
   }
   
   .items ul li a {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
@@ -81,36 +81,43 @@ html,body {
   }
   #Page1 {
     width: 100%;
+    
   }
   .content{
+    /* padding: 10px 0px 0px 20px; */
     width: 100%;
     display: flex;
   }
   .text-content {
-    width: 100%;
+    position: relative;
+    padding: 70px 50px 0px 50px;
+    width: 80%;
+    max-height: 450px;
     background-color: rgb(1, 37, 83);
   }
   .text{
-    margin: 80px 0px 30px 70px;
-    max-width: 60%;
+    /* margin: 50px 0px 50px 60px; */
+    width: 100%;
     color: white;
   }
   
   .text h1 {
     text-transform: uppercase;
-    font-size: 2.2rem;
+    font-size: 2.55vw;
+    /* font-size: 3.4vw; */
     font-weight: 600;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   .text p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.3vw;
+    /* font-size: 18px; */
+    line-height: 1.8;
   }
   
   .text button {
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 8px 14px;
     background-color: rgb(1, 37, 83);
     color: white;
@@ -118,9 +125,11 @@ html,body {
     border: 1px solid whitesmoke;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.2vw;
   }
   .img-content{
      width: 100%;
+     max-height: 450px;
      padding: 20px 0px 50px 80px;
   }
  .img{
@@ -139,7 +148,6 @@ html,body {
  top: 6%;
  right: 10%;
   border: 2px solid rgb(15, 15, 15);
-  transition: all 0.1s ease;
 
  }
  .img-src img{
@@ -147,10 +155,7 @@ html,body {
   height: 100%;
   object-fit: cover;
  }
- .img:hover .img-src{
-  top: 0;
-  right: 0;
- }
+
 
  #Page1 .details{
       width: 100%;
@@ -501,22 +506,20 @@ html,body {
     display: flex;
     padding: 50px 0px 50px 0px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     color: white;
+    gap: 20px;
   }
   .learning .src1{
     position: relative;
-    min-width:450px;
-    height: 280px;
-    /* border: 2px solid black; */
-    border-radius: 20px;
+    width: 40vw;
     transition: all 2s ease;
+    margin-top: 50px;
 
   }
   .src1 img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     transition: all 2s ease;
   
   }
@@ -527,7 +530,7 @@ html,body {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: all 0.8s ease;
-    line-height: 1.4;
+    line-height: 1.6;
   }
   .learning h5{
     font-size: 1.3vw;
@@ -558,12 +561,10 @@ html,body {
     width: 410px;
     height: 250px;
     margin-top: 10px;
-    border-radius: 20px;
   }
   .src img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     transition: all 0.8s ease;
 
   }
@@ -610,20 +611,34 @@ html,body {
   .person .model{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
-    background-color: rgb(184, 182, 182);
   }
+  
   .person .prs{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
     flex-direction: column;
+  }
+ 
+  .prs .prs1-img{
+    align-self: flex-start;
+  }
+  .prs .para p{
+
+    text-align: justify;
+
   }
   .prs .more{
     margin-top: 80px;
     margin-bottom: 40px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
+    gap: 10px;
 
   }
   .more .mors{
@@ -865,7 +880,7 @@ html,body {
       color: white;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       background-color: #131c5d;
     }
     .footer .foot-content{
@@ -901,10 +916,14 @@ html,body {
       cursor: pointer;
     }
     .footer .list-content{
-      padding: 30px 0px 30px 0px;
+      width: 100%;
+      position: relative;
+      padding: 10px 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 100px;
+       
     }
     .footer .list-items1 h1{
       font-size: 1.5vw;
@@ -912,11 +931,12 @@ html,body {
       color: white;
     }
     .list-content .list-items1{
+      align-self: flex-start;
       position: relative;
       line-height: 1.8;
       margin: 0px;
     }
-    .list-content .list-items1:nth-child(1){
+    /* .list-content .list-items1:nth-child(1){
       margin-bottom: 50px;
     }
     .list-content .list-items1:nth-child(3){
@@ -925,14 +945,14 @@ html,body {
     .list-content .list-items1:nth-child(4){
       margin-bottom: 150px;
       line-height: 2.2;
-    }
+    } */
     .list-content .list-items1:nth-child(4) p{
       font-size: 1.3vw;
       font-weight: 500;
     }
-    .list-content .list-items1:nth-child(4) .inp{
+    /* .list-content .list-items1:nth-child(4) .inp{
      margin-top: 10px;
-    }
+    } */
     .list-items1 ul{
       list-style: none;
     }
@@ -944,8 +964,9 @@ html,body {
       text-decoration: none;
     }
     .inp {
-      width: 250px;
-      height: 45px;
+      width: 20vw;
+      height: 4vw;
+      background-color: black;
       position: relative;
     }
     .inp input[type = "email"]{
@@ -956,7 +977,7 @@ html,body {
     }
     .inp input[type = "submit"]{
       position: absolute;
-      top: 10%;
+      top: 15%;
       right: 5%;
       font-size: 1.5vw;
       font-weight: 500;
@@ -1009,12 +1030,16 @@ html,body {
     }
 
   /* Responsive Styles */
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 758px) {
     #nav-bar{
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px  20px 5px 20px;
     }
     .logo{
-      margin-left: 20px;
+      margin-left: 0px;
     }
     .logo img {
       max-width: 50px;
@@ -1043,51 +1068,56 @@ html,body {
     }
     .content{
       display: flex;
-      flex-direction: column; /* Stacks elements vertically */
-      text-align: center;
+      flex-wrap: wrap;
     }
   
     .text-content {
-      max-width: 100%;
-      height: 50vh;
+      text-align: center;
+      padding: 20px 50px 20px 50px;
+      width: 100%;
+      max-height: 450px;
     }
     .text{
       text-align: center;
-      line-height: 1;
-      margin: 10px 30px 40px 30px;
+  
       max-width: 100%;
     }
     
     .text h1 {
       text-transform: uppercase;
-      font-size: 7vw;
+      font-size: 4.1vw;
       font-weight: 600;
       margin-bottom: 8px;
     }
     
     .text p {
-      font-size: 3.6vw;
-      line-height: 1.8;
+      font-size: 2.95vw;
+      line-height: 1.6;
+      text-align: justify;
+      letter-spacing: 1.1px;
     }
     
     .text button {
       margin-top: 10px;
-      font-size: 3.3vw;
+      font-size: 2.88vw;
       padding: 8px 15px;
-      font-weight: 600;
+      font-weight: 500;
     }
     .img-content{
       display: flex;
-      padding: 30px 20px 30px 20px;
-      align-items: flex-start;
+      align-items: center;
       justify-content:center;
+      margin-top: 0px;
+      padding: 10px 10px 0px 30px;
        width: 100%;
-       height: 70vh;
+       height: 62vh;
     }
    .img{
-     align-self: center;
-     width: 350px;
-     height: 300px;
+     align-self: flex-start;
+     width: 320px;
+     height: 280px;
+     
+     
    }
    .img-src{
    
@@ -1105,7 +1135,7 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 5px 10px 18px;
+    padding: 0px 20px 10px 20px;
 }
 
 .learn{
@@ -1114,15 +1144,15 @@ html,body {
   gap: 5px;
 }
 .learn i{
-  font-size: 18px;
+  font-size: 3.2vw;
 }
 .learn h2{
-  font-size: 4vw;
+  font-size: 3.2vw;
   font-weight: 600;
   color: rgb(10, 41, 65);
 }
 .learn p{
-  font-size: 15px;
+  font-size: 2.5vw;
   font-weight: 500;
 }
 
@@ -1131,12 +1161,13 @@ html,body {
  }
  
   #Page2 {
-    padding: 10px;
+    width: 100%;
+    padding: 0px;
   }
 
   #Page2 .content2 {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
   }
 
   #Page2 .content2 h1 {
@@ -1151,11 +1182,11 @@ html,body {
   #Page2 .content2 p {
     font-size: 1rem;
     line-height: 1.5;
-    margin: 15px 0;
+    margin: 0px 0px;
   }
 
   #Page2 .content2 button {
-    font-size: 0.70rem;
+    font-size: 0.72rem;
     padding: 10px 18px;
     background-color: #007bff; /* Adjust as needed */
     color: white;
@@ -1181,31 +1212,33 @@ html,body {
 
   .swiper .course{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 0px 10px;
+    gap: 20px;
 
   }
   .course h1{
     color: #041383;
-    font-size: 5vw;
+    font-size: 3.88vw;
     font-weight: 700;
 
   }
  .swiper .course ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    gap: 12px;
+    gap:15px;
+    margin-bottom: 10px;
   }
  
   .course ul li a{
     color: #01083d;
-    font-size: 3.4vw;
-    font-weight: 600;
+    font-size: 3.2vw;
+    font-weight: 500;
     text-decoration: none;
   }
   .course ul li a:hover{
@@ -1215,26 +1248,25 @@ html,body {
     width: 100%;
      display: flex;
      align-items: center;
-     justify-content: space-between;
-     background-color: black;
+     justify-content: space-around;
+     /* background-color: black; */
   }
   .swiper-slide {
     width: 100%;
     position: relative;
     text-align: start;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
   }
  
   .swiper-slide .subjects-content h3{
     position: absolute;
-    top: 5%;
-    left: 5%;
-    font-size: 2.68vw;
+    top: -3%;
+    left: 2%;
+    font-size: 2.72vw;
     font-weight: 500;
-    letter-spacing: 1px;
     
   }
  
@@ -1253,7 +1285,6 @@ html,body {
   .swiper-slide .subjects-content{
     position: relative;
     width: 100%;
-    border-radius: 10px;
 
   }
  
@@ -1275,17 +1306,17 @@ html,body {
     gap: 5px;
   }
   .swiper-slide h4{
-    font-size: 2.88vw;
+    font-size: 3.8vw;
     font-weight: 500;
 
   }
 
  .swiper-slide .lessons h4{
-    font-size: 2.2vw;
-    font-weight: 600;
+    font-size: 3.3vw;
+    font-weight: 500;
   }
   .lessons h4>i{
-    font-size: 2.2vw;
+    font-size: 3.3vw;
     font-weight: 500;
   }
   .subjects-content img{
@@ -1297,13 +1328,15 @@ html,body {
   }
   .swiper-slide .courses-price{
     text-align: start;
-    line-height: 1.58;
-    font-size: 2.4vw;
+    line-height: 1.3;
+    font-size: 3.4vw;
 
   }
   .courses-price p {
     font-weight: 500;
-
+    margin-bottom: 5px;
+    font-size: 3.4vw;
+    /* background-color: #000; */
   }
   .courses-price h4>span{
     text-decoration: line-through;
@@ -1313,32 +1346,35 @@ html,body {
   .swiper-slide .mens-id{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
   }
   .mens-id h4{
-    font-size: 2.1vw;
+    font-size: 4vw;
     font-weight: 500;
     /* background: red; */
   }
  
   .mens-id h1{
     font-weight: 500;
-    font-size: 1.95vw;
-    /* background-color: red; */
+    font-size: 2.5vw;
   }
   .mens-id h1>span{
-    font-size: 1.95vw;
+    font-size: 4vw;
+    font-weight: 500;
     margin-left: 5px;
     color: rgb(1, 37, 83);
   }
   .mens-id .men{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 8px;
   }
   .mens-id .men-img{
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
   }
   .men-img img{
@@ -1348,7 +1384,7 @@ html,body {
     border-radius: 50%;
   }
   .mens-id h1 {
-    font-size: 1.70vw;
+    font-size: 2.50vw;
     font-weight: 600;
   }
 
@@ -1366,13 +1402,14 @@ html,body {
     padding: 10px 10px 10px 10px;
   }
   .subjects h1{
-    font-size: 6.3vw;
+    font-size: 4vw;
     margin-bottom:10px;
   }
   .subjects p{
-    font-size: 3.6vw;
+    font-size: 2.70vw;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.4;
+    text-align: center;
     letter-spacing: 1px;
   }
   .categry{
@@ -1380,16 +1417,17 @@ html,body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 0px;
-    padding: 0px 10px 10px 10px;
+    gap: 30px;
+    padding: 30px 10px 20px 10px;
     color: white;
   }
   .categry .circle{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    gap: 20px;
     border: 2px solid rgb(190, 188, 188);
     border-radius: 50%;
     background-color: white;
@@ -1403,12 +1441,13 @@ html,body {
     margin-top: 5px;
     display: flex;
     align-items: center;
+    align-self: flex-start;
     justify-content: space-between;
     flex-direction: column;
   }
   .items h3{
     margin-top: 10px;
-    font-size: 4.2vw;
+    font-size: 3vw;
     font-weight: 500;
     letter-spacing: 1.2px;
   }
@@ -1426,6 +1465,7 @@ html,body {
   }
 
   .Blogs{
+    position: relative;
     width: 100%;
   
   }
@@ -1449,28 +1489,25 @@ html,body {
     margin-bottom: 10px;
   }
   .Blogs .learning{
-    /* width: 100%; */
     display: flex;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 20px 20px;
     align-items: center;
     justify-content: space-evenly;
     gap: 0px;
     color: white;
-    /* background-color: yellow; */
 
   }
   .learning .src1{
+    width: 100%;
     align-self: center;
     position: relative;
-    /* width: 100%; */
-    /* height: 50vh; */
     border-radius: 0px;
     transition: all 2s ease;
     margin-top: 30px;
 
   }
   .src1 .src1-img{
-    width: 100%;;
+    width: 100%;
     height: 50vh;
   }
   .learning h1{
@@ -1583,29 +1620,47 @@ html,body {
   }
   .person .model{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
     width: 100%;
     background-color: rgb(184, 182, 182);
   }
-  .model .prs:nth-child(3) {
-    width: 100%;
-    padding-right: 30px;
-    display: flex;
-    gap: 50px;
-    flex-direction: row-reverse;
-   
-  }
+ .model :nth-child(3){
+  align-self: flex-start;
+  margin: 0px 0px ;
+ }
   .person .prs{
+    width: 100%;
+    /* background-color: black; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    flex-direction: column;
+  }
+ 
+  .prs .prs1-img{
+    align-self: center;
+  }
+ 
+  .prs .para p{
+    width: 100%;
+    text-align: justify;
+
   }
   .prs .more{
-    
-    display: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 0px;
+
   }
+ 
+ 
   .more .mors{
    display: none;
 
@@ -1622,20 +1677,20 @@ html,body {
   }
   .prs1-img h5{
     color: #020c58;
-    font-size: 3vw;
+    font-size: 3.6vw;
     font-weight: 500;
   }
   .prs1-img h1{
-    font-size: 3.4vw;
+    font-size: 4vw;
     font-weight: 500;
     margin-bottom: 10px;
   }
   .prs p{
-    max-width: 300px;
+    width: 100%;
     text-align:justify;
     margin-bottom: 20px;
-    font-size: 2.4vw;
-    font-weight: 500;
+    font-size: 3.6vw;
+    font-weight: 600;
     color: rgb(67, 66, 66);
   }
   .img2{
@@ -1719,11 +1774,10 @@ html,body {
     color: #020c58;
   }
   .register-form {
-    /* display: none; */
     
     width: 100%;
     max-width: 450px;
-    height: 85vh;
+    /* height: 80vh; */
     margin: 10px auto;
     border-radius: 10px;
     border: 2px solid rgb(2, 2, 118);
@@ -1863,6 +1917,8 @@ html,body {
       background-color: #131c5d;
     }
     .footer .foot-content{
+      width: 100%;
+      position: relative;
       padding: 5px 40px 5px 40px;
     }
     .footer .foot-items{
@@ -1872,23 +1928,24 @@ html,body {
       color: white;
     }
     .foot-items .img-logo img{
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 70px;
       
     }
     .foot-content .content-details{
       display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: space-between;
+      align-items:flex-end;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      justify-content: flex-end;
       gap: 15px;
     }
     .foot-content .content-details i{
       background-color: white;
       color: #131c5d;
-      font-size: 2.5vw;
+      font-size: 2.8vw;
       border-radius: 50%;
-      padding: 5px 8px 5px 8px;
+      padding: 5px;
       font-weight: 600;
       margin-left: 10px;
     }
@@ -1896,16 +1953,20 @@ html,body {
       cursor: pointer;
     }
     .footer .list-content{
-      padding: 50px 0px 0px 0px;
+      /* height: 60vh; */
+      padding: 0px 0px 10px 0px;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       justify-content: space-between;
+      /* background: black; */
+      gap: 20px;
     }
     .list-content .list-items1{
       margin-left: 10px;
     }
     .footer .list-items1 h1{
-      font-size: 2.5vw;
+      font-size:3.3vw;
       font-weight: 600;
       color: white;
     }
@@ -1928,11 +1989,13 @@ html,body {
 
     }
     .list-content .list-items1:nth-child(4){
-     
-      line-height: 2.2;
+     align-self: center;
+      line-height: 2;
+      /* background-color: violet; */
+      padding: 0;
     }
     .list-content .list-items1:nth-child(4) p{
-      font-size: 2vw;
+      font-size: 2.6vw;
       font-weight: 500;
     }
     .list-content .list-items1:nth-child(4) .inp{
@@ -1942,9 +2005,8 @@ html,body {
       list-style: none;
     }
     .list-items1 ul li{
-      font-size: 2vw;
+      font-size: 3vw;
       font-weight: 500;
-      left: 1.4;
     }
     .list-items1 h1{
       text-transform: uppercase;
@@ -1954,43 +2016,47 @@ html,body {
       text-decoration: none;
     }
     .inp {
-      width: 30vw;
-      height: 7vw;
+      width: 60vw;
+      height: 9vw;
       position: relative;
     }
     .inp input[type = "email"]{
      width: 100%;
      height: 100%;
      padding: 5px 10px;
-     font-size: 2.5vw;
-     font-size: 700;
+     font-size: 3.3vw;
+     font-size: 800;
     }
     .inp input[type = "submit"]{
       position: absolute;
       top: 12%;
-      right: 8%;
-      font-size: 2vw;
+      right: 10%;
+      font-size: 3vw;
       font-weight: 500;
-      padding: 7px 12px;
+      padding: 8px 12px;
       background-color: #020c58;
       color: white;
       border-radius: 5px;
       border: none;
     }
     .footer .foot-end{
+      position: relative;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 10px;
       margin-bottom: 10px;
-      gap: 30px;
+      gap: 10px;
       font-weight: 500;
     } 
     .foot-end p{
-      font-size: 1.8vw;
+      order: 2;
+      font-size: 2.2vw;
+      font-weight: 500;
       word-spacing: 4px;
-      line-height: 1.4;
-      letter-spacing: 1.2px;
+      line-height: 1.3;
+      letter-spacing: 1.1px;
     }
    
     .foot-end #language {
@@ -2005,34 +2071,61 @@ html,body {
       color: white;
     }
     .foot-content .services a{
-      font-size: 1.8vw;
+      font-size: 3vw;
       text-decoration: none;
       color: white;
       font-weight: 500;
+      letter-spacing: 1.1px;
 
     }
+    .services .guide{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 5px;
+    }
+    .option{
+      align-self: flex-end;
+    }
+    .services .option{
+      width: 20vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .services .option select{
+      width: 20vw;
+    }
+   
     .foot-content .services a:hover{
       color: #020c58;
       text-decoration: underline;
     }
     .foot-end label{
-      font-size: 2vw;
+      font-size: 3vw;
       font-weight: 500;
     }
     .foot-end-icons {
       display: flex;
      align-self: center;
+     justify-content: center;
+     order: 1;
     }
     .foot-end .foot-end-icons i{
       background-color: white;
       color: #131c5d;
-      font-size: 2.5vw;
+      font-size: 2.8vw;
       border-radius: 50%;
-      padding: 5px 8px 5px 8px;
+      padding: 5px;
       font-weight: 600;
       margin-left: 10px;
     }
 
 }
+
+
   
   
