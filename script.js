@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let menu = document.querySelector("#menu-icon");
       let links = document.querySelector(".items");
-      console.log(menu);
-      console.log(links);
+      
       
       
       menu.onclick = () => {
