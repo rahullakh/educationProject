@@ -129,6 +129,7 @@ body {
   padding: 60px 2%;
   width: 100%;
   background-color: #052b95ff;
+  border-radius:5px;
 }
 .text {
   color: white;
@@ -190,7 +191,7 @@ body {
   position: absolute;
   top: 6%;
   right: 10%;
-  border: 2px solid rgba(128, 127, 127, 1);
+  border: 2px solid rgba(235, 4, 4, 1);
 }
 .img-src img {
   width: 100%;
