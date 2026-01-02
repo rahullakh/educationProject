@@ -24,6 +24,7 @@ body {
   align-items: center;
   position: relative;
   padding: 0px 6%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo .logo-icon {
@@ -1573,7 +1574,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .img-logo img {
@@ -1596,7 +1597,7 @@ textarea {
 .list-content {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 25px 0;
     gap: 30px; 
 }
 
